@@ -1,0 +1,26 @@
+﻿PROJECT REPORT: House Price Predictor
+Project Goal: To create a tool that predicts the price of a house based on its features using Machine Learning.
+1. The Tools Used
+* Python: The main programming language.
+* Pandas: Used to organize the house data into tables.
+* Scikit-Learn: The library that provides the "Linear Regression" math.
+* Joblib: Used to save the "brain" (the model) so we can use it later.
+2. How it Works
+The project is divided into two parts:
+1. The Training Part: The computer looks at a list of old house prices (raw.csv). it learns the relationship between size (sqft), rooms, and the final price.
+2. The Prediction Part: A user types in the details of a new house, and the computer uses what it learned to give an estimated price.
+3. The Math (Linear Regression)
+The model calculates the price using a simple formula:
+Price=Base Price+(No. Of Bedrooms)(Cost of 1 Bedroom)+(No. Of Bathrooms)(Cost of 1 Bathroom)+Area(Cost of 1 Squarefeet)+(No. Of Floors)(Cost of 1 floor)+(No. Of waterfronts)(Cost of 1 waterfront)
+4. Key Features Tracked
+The system asks the user for:
+* Number of Bedrooms and Bathrooms.
+* Total Square Feet (Living Area).
+* If it is on the Waterfront (0 for No, 1 for Yes).
+* How many Floors it has.
+5. Features of the Code
+* Error Checking: If a user types "abc" instead of a number, the program asks again instead of crashing.
+* Fast Loading: The model is saved as a .pkl file, so it starts instantly without needing to re-train.
+* Clean Output: The final price is shown clearly with dollar signs and commas (e.g., $450,000.00).
+6. Conclusion
+This project shows how Artificial Intelligence can take past data and use it to make helpful guesses about the future. It is a foundational step in building smarter real estate tools.
